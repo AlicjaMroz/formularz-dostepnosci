@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Oceny Dostępności Usług</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formularz Oceny Dostępności Usług Świadczonych przez Wydziały Urzędu</h1>
+    <p>Szanowni Państwo, proszę o wypełnienie poniższego formularza dotyczącego dostępności usług świadczonych przez Państwa wydział.</p>
+
+    <form action="#" method="post">
+        <!-- Section 1: Dostępność Stron Internetowych i Dokumentów Cyfrowych -->
+        <div class="form-section">
+            <h2>1. Dostępność Stron Internetowych i Dokumentów Cyfrowych</h2>
+            <label>Czy wszystkie informacje dostępne na stronie internetowej są zgodne z wytycznymi WCAG 2.1?</label>
+            <input type="radio" name="wcag_compliance" value="Tak"> Tak
+            <input type="radio" name="wcag_compliance" value="Nie"> Nie
+            <input type="radio" name="wcag_compliance" value="Częściowo"> Częściowo
+
+            <label>Czy wszystkie dokumenty publikowane online są dostępne dla osób korzystających z czytników ekranowych?</label>
+            <input type="radio" name="screen_reader_docs" value="Tak"> Tak
+            <input type="radio" name="screen_reader_docs" value="Nie"> Nie
+            <input type="radio" name="screen_reader_docs" value="Częściowo"> Częściowo
+
+            <label>Czy na stronie internetowej są dostępne wersje „łatwe do czytania” dla kluczowych dokumentów?</label>
+            <input type="radio" name="easy_read_versions" value="Tak"> Tak
+            <input type="radio" name="easy_read_versions" value="Nie"> Nie
+        </div>
+
+        <!-- Section 2: Dostępność Komunikacji Bezpośredniej i Telefonicznej -->
+        <div class="form-section">
+            <h2>2. Dostępność Komunikacji Bezpośredniej i Telefonicznej</h2>
+            <label>Czy Państwa wydział oferuje możliwość korzystania z pętli indukcyjnej podczas obsługi osób niedosłyszących?</label>
+            <input type="radio" name="induction_loop" value="Tak"> Tak
+            <input type="radio" name="induction_loop" value="Nie"> Nie
+
+            <label>Czy personel Państwa wydziału przeszedł szkolenie z zakresu komunikacji z osobami z niepełnosprawnościami?</label>
+            <input type="radio" name="disability_training" value="Tak"> Tak
+            <input type="radio" name="disability_training" value="Nie"> Nie
+            <input type="radio" name="disability_training" value="Planowane"> Planowane
+
+            <label>Czy osoby z niepełnosprawnościami mogą kontaktować się z Państwa wydziałem telefonicznie i czy udostępniacie alternatywne formy kontaktu?</label>
+            <input type="radio" name="alternative_contact" value="Tak"> Tak
+            <input type="radio" name="alternative_contact" value="Nie"> Nie
+        </div>
+
+        <!-- Additional Sections -->
+        <!-- Add similar form sections for remaining questions, following the same format -->
+
+        <!-- Section 8: Inne Uwagi -->
+        <div class="form-section">
+            <h2>8. Inne Uwagi</h2>
+            <label>Jakie wyzwania związane z zapewnieniem dostępności Państwo napotykają?</label>
+            <textarea name="accessibility_challenges" rows="4"></textarea>
+
+            <label>Jakie działania planujecie podjąć w najbliższym czasie, aby poprawić dostępność usług?</label>
+            <textarea name="planned_actions" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Wyślij</button>
+    </form>
+</body>
+</html>
